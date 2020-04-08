@@ -1,0 +1,20 @@
+# Sacar el teclado numérico del dispositivo móvil 
+
+Una forma de hacerlo con puro JavaScript, de manera que no necesites la librería de "JQuery".
+
+En el evento onLoad coloca este código, acuérdese cambiar el ID del elemento que en este caso es "id_sc_field_cantidad", por el Id del elemento donde quieres activar el teclado numérico.
+
+?>
+<script>
+document.addEventListener("DOMContentLoaded", function(event) {
+	
+	// Cambiar el tipo de entrada  de texto a numerico para sacar teclado numerico en moviles.
+	document.getElementById('id_sc_field_cantidad').type = 'number';
+	document.getElementById('id_sc_field_cantidad').setAttribute('inputmode', 'numeric');
+});
+</script>
+
+<?php
+
+
+
